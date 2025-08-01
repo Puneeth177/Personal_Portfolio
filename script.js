@@ -4,9 +4,18 @@ document.addEventListener("DOMContentLoaded", function () {
   const hamburger = document.querySelector(".hamburger");
   const navMenu = document.querySelector(".nav-menu");
 
+  function setBodyScrollLock(lock) {
+    if (lock) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+  }
+
   hamburger.addEventListener("click", function () {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
+    setBodyScrollLock(hamburger.classList.contains("active"));
   });
 
   // Close mobile menu when clicking on a link
@@ -14,16 +23,25 @@ document.addEventListener("DOMContentLoaded", function () {
     link.addEventListener("click", function () {
       hamburger.classList.remove("active");
       navMenu.classList.remove("active");
+      setBodyScrollLock(false);
     });
+  });
+
+  // Ensure nav closes and scroll unlocks on resize (e.g., rotate phone)
+  window.addEventListener("resize", function () {
+    if (window.innerWidth > 900) {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+      setBodyScrollLock(false);
+    }
   });
 
   // Typing animation for terminal
   const commands = [
-    "whoami",
+    "who am i",
     "Software Developer Student",
     "ls skills/",
     "C++  HTML  CSS  DSA  DBMS  OOPs",
-    "cat achievements.txt",
     "Published Research Paper ✓",
     'echo "Ready for SDE opportunities"',
     "Ready for SDE opportunities",
@@ -33,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let charIndex = 0;
   let isDeleting = false;
   const typingElement = document.getElementById("typing-animation");
-  const typingSpeed = 100;
+  const typingSpeed = 50;
   const deletingSpeed = 50;
   const pauseTime = 2000;
 

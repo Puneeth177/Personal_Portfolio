@@ -119,12 +119,8 @@ document.addEventListener("DOMContentLoaded", function () {
         // Store submission time for rate limiting
         localStorage.setItem("lastFormSubmit", now.toString());
 
-        // Show success message
-        showSuccessMessage();
-
-        // Reset form
-        contactForm.reset();
-        resetSubmitButton();
+        // Redirect to thank-you.html after simulated success
+        window.location.href = "thank-you.html";
       }, 1500); // Simulate 1.5 second delay
 
       return;
@@ -155,18 +151,16 @@ document.addEventListener("DOMContentLoaded", function () {
     })
       .then((response) => {
         if (response.ok) {
-          // Show success message
-          showSuccessMessage();
-          // Reset form
-          contactForm.reset();
+          // Redirect to thank-you.html after successful submission
+          window.location.href = "thank-you.html";
         } else {
           // Show error message
           showFormStatus(
             "Oops! There was a problem submitting your form.",
             "error"
           );
+          resetSubmitButton();
         }
-        resetSubmitButton();
       })
       .catch((error) => {
         // Show error message

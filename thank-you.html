@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You - M S Puneeth</title>
+    <meta
+      name="description"
+      content="Thank you for contacting M S Puneeth - Software Developer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .thank-you-container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+      }
+      .thank-you-card {
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(0, 255, 255, 0.2);
+        border-radius: 20px;
+        padding: 3rem;
+        max-width: 600px;
+        box-shadow: 0 20px 40px rgba(0, 255, 255, 0.2);
+      }
+      .thank-you-title {
+        color: #00ffff;
+        font-family: "Orbitron", sans-serif;
+        margin-bottom: 1.5rem;
+      }
+      .thank-you-message {
+        color: #ffffff;
+        font-family: "Rajdhani", sans-serif;
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+      }
+      .return-btn {
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Animated Background -->
+    <div class="background-animation">
+      <div class="stars"></div>
+      <div class="particles"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <div class="thank-you-container">
+      <div class="thank-you-card">
+        <h1 class="thank-you-title">Message Sent Successfully!</h1>
+        <p class="thank-you-message">
+          Thank you for reaching out. I've received your message and will get
+          back to you as soon as possible.
+        </p>
+        <a href="index.html" class="btn btn-primary return-btn">
+          <span>Return to Portfolio</span>
+          <div class="btn-glow"></div>
+        </a>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

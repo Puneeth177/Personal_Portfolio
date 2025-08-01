@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M S Puneeth - Software Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of M S Puneeth - Software Developer Student passionate about building innovative digital solutions"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Animated Background -->
+    <div class="background-animation">
+      <div class="stars"></div>
+      <div class="particles"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-effect">
+      <div class="nav-container">
+        <div class="logo">
+          <span class="logo-text">M S Puneeth</span>
+          <div class="logo-glow"></div>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="greeting">Hi, I'm</span>
+            <span class="name">M S Puneeth</span>
+            <div class="title-glow"></div>
+          </h1>
+          <p class="hero-subtitle">
+            A Software Developer Student passionate about building innovative
+            digital solutions
+          </p>
+          <p class="hero-subtext">
+            Currently seeking Software Development Engineer (SDE) opportunities
+          </p>
+          <div class="hero-buttons">
+            <a href="#resume" class="btn btn-primary">
+              <span>Download Resume</span>
+              <div class="btn-glow"></div>
+            </a>
+            <a href="#projects" class="btn btn-secondary">
+              <span>View Projects</span>
+              <div class="btn-glow"></div>
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="terminal-window">
+            <div class="terminal-header">
+              <div class="terminal-buttons">
+                <span class="btn-close"></span>
+                <span class="btn-minimize"></span>
+                <span class="btn-maximize"></span>
+              </div>
+              <span class="terminal-title">developer.sh</span>
+            </div>
+            <div class="terminal-body">
+              <div class="terminal-line">
+                <span class="prompt">puneeth@dev:~$</span>
+                <span class="command" id="typing-animation"></span>
+                <span class="cursor">|</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-arrow"></div>
+        <span>Scroll Down</span>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I'm a passionate software developer student with a strong
+              foundation in programming and problem-solving. My journey in
+              technology is driven by curiosity and the desire to create
+              innovative solutions that make a difference. I have published a
+              research paper and am constantly learning new technologies to stay
+              ahead in this dynamic field.
+            </p>
+            <p>
+              Currently pursuing opportunities in software development, I'm
+              excited to contribute to teams that value innovation,
+              collaboration, and technical excellence.
+            </p>
+          </div>
+          <div class="skills-section">
+            <h3>Skills & Technologies</h3>
+            <div class="skills-grid">
+              <div class="skill-category">
+                <h4>Languages</h4>
+                <div class="skill-items">
+                  <span class="skill-item">C++</span>
+                  <span class="skill-item">HTML</span>
+                  <span class="skill-item">CSS</span>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h4>Core Concepts</h4>
+                <div class="skill-items">
+                  <span class="skill-item">DSA</span>
+                  <span class="skill-item">DBMS</span>
+                  <span class="skill-item">OOPs</span>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h4>Tools</h4>
+                <div class="skill-items">
+                  <span class="skill-item">GitHub</span>
+                  <span class="skill-item">VS Code</span>
+                  <span class="skill-item">MS Office</span>
+                  <span class="skill-item">Cursor</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card major-project glass-effect">
+            <div class="project-header">
+              <h3>Rain-Prediction</h3>
+              <div class="project-status">Major Project</div>
+            </div>
+            <p>Rain prediction using ML techniques.</p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Machine Learning</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/Puneeth177/Rain-Prediction-using-ML.git"
+                onclick="event.preventDefault(); window.open('https://github.com/Puneeth177/Rain-Prediction-using-ML.git', '_blank', 'noopener,noreferrer');"
+                class="project-link"
+              >
+                <span>GitHub</span>
+                <div class="link-glow"></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card mini-project glass-effect">
+            <div class="project-header">
+              <h3>Personal Portfolio</h3>
+              <div class="project-status">Mini Project</div>
+            </div>
+            <p>
+              Responsive portfolio website with glassmorphism design and smooth
+              animations.
+            </p>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/Puneeth177/Personal_Portfolio.git"
+                onclick="event.preventDefault(); window.open('https://github.com/Puneeth177/Personal_Portfolio.git', '_blank', 'noopener,noreferrer');"
+                class="project-link"
+              >
+                <span>GitHub</span>
+                <div class="link-glow"></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card major-project glass-effect">
+            <div class="project-header">
+              <h3>Protein Grub Hub</h3>
+              <div class="project-status">Major Project</div>
+            </div>
+            <p>
+              Personalized protein meal planner and delivery app with
+              recommendation system (currently yet to implement).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+      <div class="container">
+        <h2 class="section-title">Certifications & Publications</h2>
+        <div class="certifications-grid">
+          <div
+            class="cert-card glass-effect cert-card-placeholder"
+            style="visibility: hidden"
+          ></div>
+          <div class="cert-card glass-effect">
+            <div class="cert-icon">📄</div>
+            <h3>Published Research Paper</h3>
+            <p>
+              <a
+                href="https://ijcrt.org/viewfull.php?&p_id=IJCRT2501288"
+                target="_blank"
+                rel="noopener noreferrer"
+                style="color: #00ffff; text-decoration: underline"
+              >
+                DRONE TECHNOLOGIES: STATE OF THE ART, CHALLENGES AND FUTURE
+                SCOPE / IJCRT2501288
+              </a>
+            </p>
+            <span class="cert-date">2024</span>
+          </div>
+          <div class="cert-card glass-effect">
+            <div class="cert-icon">📄</div>
+            <h3>Research Paper (In Progress)</h3>
+            <p>
+              <strong>Protein Grub Hub:</strong> Personalized protein meal
+              delivery.
+            </p>
+            <span class="cert-date">In Progress</span>
+          </div>
+          <div
+            class="cert-card glass-effect cert-card-placeholder"
+            style="visibility: hidden"
+          ></div>
+          <div
+            class="cert-card glass-effect cert-card-placeholder"
+            style="visibility: hidden"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+      <div class="container">
+        <div class="resume-content glass-effect">
+          <h2>Download My Resume</h2>
+          <p>
+            Get a detailed overview of my skills, experience, and achievements
+          </p>
+          <a
+            href="https://drive.google.com/file/d/1BZVM0IV0FnjsHnagXyhYeYNgo8h5XM4b/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            onclick="event.preventDefault(); window.open('https://drive.google.com/file/d/1BZVM0IV0FnjsHnagXyhYeYNgo8h5XM4b/view?usp=sharing', '_blank', 'noopener,noreferrer');"
+            class="btn btn-primary resume-btn"
+          >
+            <span>📄 Download Resume (PDF)</span>
+            <div class="btn-glow"></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Let's Connect</h3>
+            <p>
+              I'm always open to discussing new opportunities, innovative
+              projects, or just having a tech conversation.
+            </p>
+            <div class="contact-links">
+              <a href="mailto:mspuneeth73@gmail.com?" class="contact-link">
+                <span class="contact-icon">📧</span>
+                <span>mspuneeth73@gmail.com</span>
+              </a>
+              <a href="https://github.com/Puneeth177" class="contact-link">
+                <span class="contact-icon">💻</span>
+                <span>GitHub</span>
+              </a>
+              <a
+                href="https://linkedin.com/in/m-s-puneeth-031ba9294/"
+                class="contact-link"
+              >
+                <span class="contact-icon">💼</span>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+          <!-- Formspree form -->
+          <form
+            id="contact-form"
+            class="contact-form glass-effect"
+            action="https://formbold.com/s/912Zr"
+            method="POST"
+          >
+            <!-- Formbold configuration: add your Formbold endpoint above -->
+
+            <div class="form-group">
+              <input type="text" id="name" name="name" required />
+              <label for="name">Your Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" required />
+              <label for="email">Your Email</label>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" required></textarea>
+              <label for="message">Your Message</label>
+            </div>
+            <button type="submit" class="btn btn-primary" id="submit-btn">
+              <span>Send Message</span>
+              <div class="btn-glow"></div>
+            </button>
+            <div
+              id="form-status"
+              style="margin-top: 15px; text-align: center; display: none"
+            ></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <span class="logo-text">M S Puneeth</span>
+          </div>
+          <p>&copy; 2024 M S Puneeth. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Form handler script -->
+    <script src="form-handler.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

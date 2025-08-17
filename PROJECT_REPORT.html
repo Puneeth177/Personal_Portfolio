@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M S Puneeth Portfolio - Technical Project Report</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: #fff;
+        font-size: 12px;
+      }
+
+      .container {
+        max-width: 210mm;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .header {
+        text-align: center;
+        border-bottom: 3px solid #2563eb;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+      }
+
+      .header h1 {
+        color: #1e40af;
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+
+      .header h2 {
+        color: #64748b;
+        font-size: 18px;
+        font-weight: normal;
+      }
+
+      .section {
+        margin-bottom: 30px;
+        page-break-inside: avoid;
+      }
+
+      .section-title {
+        color: #1e40af;
+        font-size: 20px;
+        border-bottom: 2px solid #e2e8f0;
+        padding-bottom: 8px;
+        margin-bottom: 15px;
+      }
+
+      .subsection-title {
+        color: #374151;
+        font-size: 16px;
+        font-weight: 600;
+        margin: 15px 0 10px 0;
+      }
+
+      .tech-stack {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        margin: 15px 0;
+      }
+
+      .tech-category {
+        background: #f8fafc;
+        padding: 15px;
+        border-radius: 8px;
+        border-left: 4px solid #2563eb;
+      }
+
+      .tech-category h4 {
+        color: #1e40af;
+        margin-bottom: 8px;
+      }
+
+      .tech-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+      }
+
+      .tech-item {
+        background: #e2e8f0;
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-size: 11px;
+        color: #475569;
+      }
+
+      .features-list {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .features-list li {
+        padding: 5px 0;
+        padding-left: 20px;
+        position: relative;
+      }
+
+      .features-list li:before {
+        content: "✓";
+        color: #10b981;
+        font-weight: bold;
+        position: absolute;
+        left: 0;
+      }
+
+      .code-structure {
+        background: #f1f5f9;
+        padding: 15px;
+        border-radius: 8px;
+        font-family: "Courier New", monospace;
+        font-size: 11px;
+        margin: 10px 0;
+      }
+
+      .qa-section {
+        background: #fef7ff;
+        padding: 15px;
+        border-radius: 8px;
+        margin: 10px 0;
+        border-left: 4px solid #a855f7;
+      }
+
+      .question {
+        font-weight: 600;
+        color: #7c2d12;
+        margin-bottom: 5px;
+      }
+
+      .answer {
+        color: #374151;
+        margin-bottom: 15px;
+      }
+
+      .architecture-diagram {
+        background: #f8fafc;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        margin: 15px 0;
+        border: 2px dashed #cbd5e1;
+      }
+
+      .workflow-step {
+        background: #ecfdf5;
+        padding: 10px;
+        margin: 8px 0;
+        border-radius: 6px;
+        border-left: 4px solid #10b981;
+      }
+
+      .improvement-item {
+        background: #fef3c7;
+        padding: 10px;
+        margin: 8px 0;
+        border-radius: 6px;
+        border-left: 4px solid #f59e0b;
+      }
+
+      .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 15px 0;
+      }
+
+      .table th,
+      .table td {
+        border: 1px solid #e2e8f0;
+        padding: 8px;
+        text-align: left;
+      }
+
+      .table th {
+        background: #f1f5f9;
+        font-weight: 600;
+        color: #374151;
+      }
+
+      .highlight {
+        background: #dbeafe;
+        padding: 2px 4px;
+        border-radius: 3px;
+        color: #1e40af;
+      }
+
+      .page-break {
+        page-break-before: always;
+      }
+
+      @media print {
+        body {
+          font-size: 11px;
+        }
+        .container {
+          padding: 15px;
+        }
+        .section {
+          margin-bottom: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <h1>M S Puneeth - Personal Portfolio Website</h1>
+        <h2>Complete Technical Project Report & Interview Guide</h2>
+        <p>
+          <strong>Project Type:</strong> Modern React-based Portfolio Website |
+          <strong>Date:</strong> January 2025
+        </p>
+      </div>
+
+      <!-- 1. Project Overview -->
+      <div class="section">
+        <h2 class="section-title">1. Project Overview</h2>
+
+        <h3 class="subsection-title">Project Name</h3>
+        <p><strong>M S Puneeth - Personal Portfolio Website</strong></p>
+
+        <h3 class="subsection-title">Problem Statement & Motivation</h3>
+        <p>
+          As a software developer student seeking SDE opportunities, I needed a
+          professional online presence that would:
+        </p>
+        <ul class="features-list">
+          <li>Showcase my technical skills and projects effectively</li>
+          <li>Provide easy access to my resume and contact information</li>
+          <li>Demonstrate my frontend development capabilities</li>
+          <li>Create a memorable first impression for potential employers</li>
+          <li>Serve as a central hub for all my professional information</li>
+        </ul>
+
+        <h3 class="subsection-title">Key Features & Functionalities</h3>
+        <ul class="features-list">
+          <li>
+            <strong>Responsive Design:</strong> Optimized for desktop, tablet,
+            and mobile devices
+          </li>
+          <li>
+            <strong>Modern UI/UX:</strong> Glassmorphism design with smooth
+            animations
+          </li>
+          <li>
+            <strong>Interactive Elements:</strong> Animated background with
+            stars and particles
+          </li>
+          <li>
+            <strong>Project Showcase:</strong> Detailed project cards with live
+            demo links
+          </li>
+          <li>
+            <strong>Skills Display:</strong> Categorized technical skills
+            presentation
+          </li>
+          <li>
+            <strong>Contact Integration:</strong> Direct email, GitHub, and
+            LinkedIn links
+          </li>
+          <li><strong>Resume Download:</strong> Easy access to PDF resume</li>
+          <li>
+            <strong>Research Publications:</strong> Academic achievements
+            display
+          </li>
+          <li>
+            <strong>SEO Optimized:</strong> Proper meta tags and semantic HTML
+          </li>
+          <li>
+            <strong>Fast Loading:</strong> Optimized assets and modern build
+            tools
+          </li>
+        </ul>
+
+        <h3 class="subsection-title">Real-World Use Cases</h3>
+        <ul class="features-list">
+          <li>
+            <strong>Job Applications:</strong> Recruiters can quickly assess my
+            skills and projects
+          </li>
+          <li>
+            <strong>Networking:</strong> Easy sharing of professional
+            information at events
+          </li>
+          <li>
+            <strong>Client Presentations:</strong> Demonstrating web development
+            capabilities
+          </li>
+          <li>
+            <strong>Academic Submissions:</strong> Showcasing research
+            publications and projects
+          </li>
+          <li>
+            <strong>Personal Branding:</strong> Establishing professional online
+            identity
+          </li>
+        </ul>
+      </div>
+
+      <!-- 2. System Architecture & Design -->
+      <div class="section page-break">
+        <h2 class="section-title">2. System Architecture & Design</h2>
+
+        <h3 class="subsection-title">Overall Architecture</h3>
+        <div class="architecture-diagram">
+          <h4>Frontend Architecture (React SPA)</h4>
+          <pre>
+┌─────────────────────────────────────────────────────────┐
+│                    Browser (Client)                     │
+├─────────────────────────────────────────────────────────┤
+│                React Application                        │
+│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐    │
+│  │   Router    │  │    Pages    │  │ Components  │    │
+│  │ (React      │  │   - Index   │  │   - UI      │    │
+│  │  Router)    │  │ - NotFound  │  │ - Custom    │    │
+│  └─────────────┘  └─────────────┘  └─────────────┘    │
+├─────────────────────────────────────────────────────────┤
+│                  State Management                       │
+│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐    │
+│  │ React Query │  │   Hooks     │  │   Context   │    │
+│  │  (Caching)  │  │ (Custom)    │  │ (Providers) │    │
+│  └─────────────┘  └─────────────┘  └─────────────┘    │
+├─────────────────────────────────────────────────────────┤
+│                   Styling Layer                         │
+│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐    │
+│  │ Tailwind    │  │  shadcn/ui  │  │   Custom    │    │
+│  │    CSS      │  │ Components  │  │     CSS     │    │
+│  └─────────────┘  └─────────────┘  └─────────────┘    │
+├─────────────────────────────────────────────────────────┤
+│                   Build Tools                           │
+│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐    │
+│  │    Vite     │  │ TypeScript  │  │   ESLint    │    │
+│  │ (Bundler)   │  │ (Type Safe) │  │  (Linting)  │    │
+│  └─────────────┘  └─────────────┘  └─────────────┘    │
+└─────────────────────────────────────────────────────────┘
+                </pre
+          >
+        </div>
+
+        <h3 class="subsection-title">Component Workflow</h3>
+        <div class="workflow-step">
+          <strong>1. Application Bootstrap:</strong> main.tsx initializes React
+          app with providers
+        </div>
+        <div class="workflow-step">
+          <strong>2. Routing Setup:</strong> App.tsx configures React Router
+          with route definitions
+        </div>
+        <div class="workflow-step">
+          <strong>3. Page Rendering:</strong> Index page renders with all
+          portfolio sections
+        </div>
+        <div class="workflow-step">
+          <strong>4. Component Composition:</strong> UI components from
+          shadcn/ui provide consistent design
+        </div>
+        <div class="workflow-step">
+          <strong>5. State Management:</strong> React Query handles any async
+          operations and caching
+        </div>
+        <div class="workflow-step">
+          <strong>6. Responsive Design:</strong> Tailwind CSS ensures
+          mobile-first responsive layout
+        </div>
+
+        <h3 class="subsection-title">Data Flow Diagram</h3>
+        <div class="architecture-diagram">
+          <pre>
+User Interaction → React Components → State Updates → UI Re-render
+        ↓                ↓               ↓              ↓
+   Click Events    →  Event Handlers → Local State → DOM Updates
+   Form Inputs     →  Form Handlers  → Validation → User Feedback
+   Navigation      →  Router         → Route Change → Page Render
+                </pre
+          >
+        </div>
+      </div>
+
+      <!-- 3. Technology Stack -->
+      <div class="section">
+        <h2 class="section-title">3. Technology Stack</h2>
+
+        <div class="tech-stack">
+          <div class="tech-category">
+            <h4>Frontend Framework</h4>
+            <div class="tech-list">
+              <span class="tech-item">React 18.3.1</span>
+              <span class="tech-item">TypeScript 5.5.3</span>
+              <span class="tech-item">React Router 6.26.2</span>
+            </div>
+          </div>
+
+          <div class="tech-category">
+            <h4>Build Tools</h4>
+            <div class="tech-list">
+              <span class="tech-item">Vite 5.4.1</span>
+              <span class="tech-item">SWC (Fast Refresh)</span>
+              <span class="tech-item">ESLint 9.9.0</span>
+            </div>
+          </div>
+
+          <div class="tech-category">
+            <h4>Styling & UI</h4>
+            <div class="tech-list">
+              <span class="tech-item">Tailwind CSS 3.4.11</span>
+              <span class="tech-item">shadcn/ui Components</span>
+              <span class="tech-item">Radix UI Primitives</span>
+              <span class="tech-item">Lucide React Icons</span>
+            </div>
+          </div>
+
+          <div class="tech-category">
+            <h4>State Management</h4>
+            <div class="tech-list">
+              <span class="tech-item">TanStack React Query</span>
+              <span class="tech-item">React Hooks</span>
+              <span class="tech-item">Context API</span>
+            </div>
+          </div>
+
+          <div class="tech-category">
+            <h4>Form Handling</h4>
+            <div class="tech-list">
+              <span class="tech-item">React Hook Form</span>
+              <span class="tech-item">Zod Validation</span>
+              <span class="tech-item">Hookform Resolvers</span>
+            </div>
+          </div>
+
+          <div class="tech-category">
+            <h4>Additional Libraries</h4>
+            <div class="tech-list">
+              <span class="tech-item">Date-fns</span>
+              <span class="tech-item">Class Variance Authority</span>
+              <span class="tech-item">Tailwind Merge</span>
+              <span class="tech-item">Sonner (Toasts)</span>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="subsection-title">Why These Technologies?</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Technology</th>
+              <th>Reason for Choice</th>
+              <th>Benefits</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>React + TypeScript</strong></td>
+              <td>Industry standard, type safety</td>
+              <td>Better developer experience, fewer runtime errors</td>
+            </tr>
+            <tr>
+              <td><strong>Vite</strong></td>
+              <td>Fast development server, modern bundling</td>
+              <td>Lightning-fast HMR, optimized production builds</td>
+            </tr>
+            <tr>
+              <td><strong>Tailwind CSS</strong></td>
+              <td>Utility-first, rapid development</td>
+              <td>Consistent design system, smaller bundle size</td>
+            </tr>
+            <tr>
+              <td><strong>shadcn/ui</strong></td>
+              <td>High-quality, accessible components</td>
+              <td>Professional UI, accessibility built-in</td>
+            </tr>
+            <tr>
+              <td><strong>React Query</strong></td>
+              <td>Powerful data fetching and caching</td>
+              <td>Better UX, automatic background updates</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4. Software Requirement Specification -->
+      <div class="section page-break">
+        <h2 class="section-title">
+          4. Software Requirement Specification (SRS)
+        </h2>
+
+        <h3 class="subsection-title">Functional Requirements</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Requirement</th>
+              <th>Description</th>
+              <th>Priority</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>FR-01</td>
+              <td>Portfolio Display</td>
+              <td>Display personal information, skills, and projects</td>
+              <td>High</td>
+            </tr>
+            <tr>
+              <td>FR-02</td>
+              <td>Resume Download</td>
+              <td>Provide downloadable PDF resume</td>
+              <td>High</td>
+            </tr>
+            <tr>
+              <td>FR-03</td>
+              <td>Project Showcase</td>
+              <td>Display projects with descriptions and links</td>
+              <td>High</td>
+            </tr>
+            <tr>
+              <td>FR-04</td>
+              <td>Contact Information</td>
+              <td>Provide multiple contact methods</td>
+              <td>High</td>
+            </tr>
+            <tr>
+              <td>FR-05</td>
+              <td>Responsive Design</td>
+              <td>Work seamlessly across all device sizes</td>
+              <td>High</td>
+            </tr>
+            <tr>
+              <td>FR-06</td>
+              <td>Navigation</td>
+              <td>Smooth navigation between sections</td>
+              <td>Medium</td>
+            </tr>
+            <tr>
+              <td>FR-07</td>
+              <td>Animations</td>
+              <td>Engaging visual animations and transitions</td>
+              <td>Medium</td>
+            </tr>
+            <tr>
+              <td>FR-08</td>
+              <td>SEO Optimization</td>
+              <td>Proper meta tags and semantic HTML</td>
+              <td>Medium</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 class="subsection-title">Non-Functional Requirements</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Requirement</th>
+              <th>Specification</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Performance</strong></td>
+              <td>Page Load Time</td>
+              <td>< 3 seconds on 3G connection</td>
+            </tr>
+            <tr>
+              <td><strong>Usability</strong></td>
+              <td>User Interface</td>
+              <td>Intuitive navigation, clear visual hierarchy</td>
+            </tr>
+            <tr>
+              <td><strong>Compatibility</strong></td>
+              <td>Browser Support</td>
+              <td>Chrome, Firefox, Safari, Edge (latest 2 versions)</td>
+            </tr>
+            <tr>
+              <td><strong>Responsiveness</strong></td>
+              <td>Device Support</td>
+              <td>Mobile (320px+), Tablet (768px+), Desktop (1024px+)</td>
+            </tr>
+            <tr>
+              <td><strong>Accessibility</strong></td>
+              <td>WCAG Compliance</td>
+              <td>Level AA compliance for screen readers</td>
+            </tr>
+            <tr>
+              <td><strong>Security</strong></td>
+              <td>Data Protection</td>
+              <td>No sensitive data storage, secure external links</td>
+            </tr>
+            <tr>
+              <td><strong>Maintainability</strong></td>
+              <td>Code Quality</td>
+              <td>TypeScript, ESLint rules, component modularity</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 class="subsection-title">User Roles & Permissions</h3>
+        <ul class="features-list">
+          <li>
+            <strong>Visitors (Public):</strong> Can view all content, download
+            resume, access contact links
+          </li>
+          <li>
+            <strong>Recruiters:</strong> Primary target audience, can assess
+            skills and projects
+          </li>
+          <li>
+            <strong>Developers:</strong> Can view source code, understand
+            implementation
+          </li>
+          <li>
+            <strong>Academic Reviewers:</strong> Can access research
+            publications and academic projects
+          </li>
+        </ul>
+
+        <h3 class="subsection-title">Assumptions & Constraints</h3>
+        <ul class="features-list">
+          <li>
+            <strong>Internet Connection:</strong> Users have stable internet for
+            optimal experience
+          </li>
+          <li>
+            <strong>Modern Browsers:</strong> Users use browsers with ES6+
+            support
+          </li>
+          <li>
+            <strong>JavaScript Enabled:</strong> Full functionality requires
+            JavaScript
+          </li>
+          <li>
+            <strong>Static Hosting:</strong> No server-side processing required
+          </li>
+          <li>
+            <strong>External Dependencies:</strong> Relies on CDN availability
+            for fonts and icons
+          </li>
+        </ul>
+      </div>
+
+      <!-- 5. Code-Level Explanation -->
+      <div class="section">
+        <h2 class="section-title">5. Code-Level Explanation</h2>
+
+        <h3 class="subsection-title">Project Structure</h3>
+        <div class="code-structure">
+          my-portfolio-website/ ├── public/ # Static assets │ ├── assets/ #
+          Images, PDFs │ ├── script.js # Vanilla JS for animations │ └──
+          form-handler.js # Contact form handling ├── src/ # Source code │ ├──
+          components/ # React components │ │ ├── ui/ # shadcn/ui components │ │
+          └── TestComponent.tsx # Custom components │ ├── hooks/ # Custom React
+          hooks │ │ ├── use-mobile.tsx # Mobile detection │ │ └── use-toast.ts #
+          Toast notifications │ ├── lib/ # Utility functions │ │ └── utils.ts #
+          Class name utilities │ ├── pages/ # Page components │ │ ├── index.tsx
+          # Main portfolio page │ │ └── NotFound.tsx # 404 error page │ ├──
+          App.tsx # Main app component │ ├── main.tsx # Application entry point
+          │ └── index.css # Global styles ├── index.html # Static HTML version
+          ├── style.css # Static CSS styles ├── package.json # Dependencies ├──
+          vite.config.ts # Vite configuration ├── tailwind.config.ts # Tailwind
+          configuration └── tsconfig.json # TypeScript configuration
+        </div>
+
+        <h3 class="subsection-title">Key Components & Logic</h3>
+
+        <h4><strong>1. Main Application (App.tsx)</strong></h4>
+        <div class="code-structure">
+          // Sets up routing, providers, and global components const App = () =>
+          ( &lt;QueryClientProvider client={queryClient}&gt;
+          &lt;TooltipProvider&gt; &lt;Toaster /&gt; &lt;Sonner /&gt;
+          &lt;BrowserRouter&gt; &lt;Routes&gt; &lt;Route path="/"
+          element={&lt;Index /&gt;} /&gt; &lt;Route path="*"
+          element={&lt;NotFound /&gt;} /&gt; &lt;/Routes&gt;
+          &lt;/BrowserRouter&gt; &lt;/TooltipProvider&gt;
+          &lt;/QueryClientProvider&gt; );
+        </div>
+
+        <h4><strong>2. Portfolio Page (pages/index.tsx)</strong></h4>
+        <div class="code-structure">
+          // Main portfolio content with sections: // - Hero section with
+          introduction // - About section with skills // - Contact section with
+          links // - Resume download functionality const handleDownloadResume =
+          () => { const opened = window.open("/assets/Resume.pdf", "_blank"); if
+          (!opened) { window.location.href = "/assets/Resume.pdf"; } };
+        </div>
+
+        <h4>
+          <strong>3. Mobile Detection Hook (hooks/use-mobile.tsx)</strong>
+        </h4>
+        <div class="code-structure">
+          // Custom hook for responsive behavior export function useIsMobile() {
+          const [isMobile, setIsMobile] = useState&lt;boolean |
+          undefined&gt;(undefined); useEffect(() => { const mql =
+          window.matchMedia(`(max-width: ${MOBILE_BREAKPOINT - 1}px)`); const
+          onChange = () => setIsMobile(window.innerWidth < MOBILE_BREAKPOINT);
+          mql.addEventListener("change", onChange);
+          setIsMobile(window.innerWidth < MOBILE_BREAKPOINT); return () =>
+          mql.removeEventListener("change", onChange); }, []); return
+          !!isMobile; }
+        </div>
+
+        <h4><strong>4. Utility Functions (lib/utils.ts)</strong></h4>
+        <div class="code-structure">
+          // Combines class names efficiently export function cn(...inputs:
+          ClassValue[]) { return twMerge(clsx(inputs)); } // Used throughout
+          components for conditional styling
+        </div>
+
+        <h3 class="subsection-title">Component Interaction Flow</h3>
+        <div class="workflow-step">
+          <strong>1. App Bootstrap:</strong> main.tsx renders App component with
+          React.StrictMode
+        </div>
+        <div class="workflow-step">
+          <strong>2. Provider Setup:</strong> App.tsx wraps application with
+          necessary providers (Query, Tooltip, Router)
+        </div>
+        <div class="workflow-step">
+          <strong>3. Route Resolution:</strong> React Router determines which
+          page component to render
+        </div>
+        <div class="workflow-step">
+          <strong>4. Page Rendering:</strong> Index page renders all portfolio
+          sections in sequence
+        </div>
+        <div class="workflow-step">
+          <strong>5. Component Composition:</strong> Each section uses shadcn/ui
+          components for consistent styling
+        </div>
+        <div class="workflow-step">
+          <strong>6. Event Handling:</strong> User interactions trigger
+          appropriate handlers (resume download, navigation)
+        </div>
+      </div>
+
+      <!-- 6. Deployment & Usage -->
+      <div class="section page-break">
+        <h2 class="section-title">6. Deployment & Usage</h2>
+
+        <h3 class="subsection-title">Local Development Setup</h3>
+        <div class="workflow-step">
+          <strong>Step 1:</strong> Clone the repository
+          <div class="code-structure">
+            git clone &lt;repository-url&gt; cd my-portfolio-website
+          </div>
+        </div>
+
+        <div class="workflow-step">
+          <strong>Step 2:</strong> Install dependencies
+          <div class="code-structure">npm install</div>
+        </div>
+
+        <div class="workflow-step">
+          <strong>Step 3:</strong> Start development server
+          <div class="code-structure">npm run dev</div>
+        </div>
+
+        <div class="workflow-step">
+          <strong>Step 4:</strong> Open browser and navigate to
+          http://localhost:8080
+        </div>
+
+        <h3 class="subsection-title">Production Build</h3>
+        <div class="workflow-step">
+          <strong>Build for Production:</strong>
+          <div class="code-structure">npm run build</div>
+          <p>
+            Generates optimized static files in the
+            <span class="highlight">dist/</span> directory
+          </p>
+        </div>
+
+        <div class="workflow-step">
+          <strong>Preview Production Build:</strong>
+          <div class="code-structure">npm run preview</div>
+          <p>Serves the production build locally for testing</p>
+        </div>
+
+        <h3 class="subsection-title">Deployment Options</h3>
+
+        <h4><strong>Vercel Deployment (Recommended)</strong></h4>
+        <ul class="features-list">
+          <li>Connect GitHub repository to Vercel</li>
+          <li>Automatic deployments on push to main branch</li>
+          <li>Built-in CDN and performance optimization</li>
+          <li>Custom domain support</li>
+          <li>Zero configuration required</li>
+        </ul>
+
+        <h4><strong>Alternative Deployment Platforms</strong></h4>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Platform</th>
+              <th>Pros</th>
+              <th>Cons</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Netlify</strong></td>
+              <td>Easy setup, form handling, branch previews</td>
+              <td>Limited build minutes on free tier</td>
+            </tr>
+            <tr>
+              <td><strong>GitHub Pages</strong></td>
+              <td>Free, integrated with GitHub</td>
+              <td>Static sites only, limited custom domains</td>
+            </tr>
+            <tr>
+              <td><strong>AWS S3 + CloudFront</strong></td>
+              <td>Highly scalable, full control</td>
+              <td>More complex setup, requires AWS knowledge</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 class="subsection-title">Usage Examples</h3>
+
+        <h4><strong>For Recruiters:</strong></h4>
+        <ul class="features-list">
+          <li>Visit homepage to see overview of skills and experience</li>
+          <li>Click "Download Resume" for detailed PDF</li>
+          <li>Browse projects section to see technical capabilities</li>
+          <li>Use contact links to reach out directly</li>
+        </ul>
+
+        <h4><strong>For Developers:</strong></h4>
+        <ul class="features-list">
+          <li>Inspect source code to understand implementation</li>
+          <li>View responsive design across different screen sizes</li>
+          <li>Analyze performance using browser dev tools</li>
+          <li>Study component architecture and state management</li>
+        </ul>
+      </div>
+
+      <!-- 7. Interview Questions & Answers -->
+      <div class="section">
+        <h2 class="section-title">
+          7. Possible Interview Questions & Smart Answers
+        </h2>
+
+        <h3 class="subsection-title">Technical Questions</h3>
+
+        <div class="qa-section">
+          <div class="question">
+            Q: Why did you choose React over other frameworks like Vue or
+            Angular?
+          </div>
+          <div class="answer">
+            <strong>A:</strong> I chose React because of its component-based
+            architecture, which makes the code more maintainable and reusable.
+            React's virtual DOM provides excellent performance, and its large
+            ecosystem offers solutions for any requirement. Additionally,
+            React's popularity in the job market makes it a strategic choice for
+            career growth. The unidirectional data flow also makes debugging
+            easier compared to two-way binding in other frameworks.
+          </div>
+        </div>
+
+        <div class="qa-section">
+          <div class="question">
+            Q: Explain your decision to use TypeScript instead of plain
+            JavaScript.
+          </div>
+          <div class="answer">
+            <strong>A:</strong> TypeScript adds static type checking, which
+            catches errors at compile time rather than runtime. This is crucial
+            for maintaining code quality, especially as the project grows. It
+            also provides better IDE support with autocomplete and refactoring
+            tools. The type definitions serve as documentation, making the code
+            more self-explanatory for other developers. While there's a slight
+            learning curve, the benefits in terms of code reliability and
+            developer experience far outweigh the costs.
+          </div>
+        </div>
+
+        <div class="qa-section">
+          <div class="question">
+            Q: How did you ensure the website is responsive across different
+            devices?
+          </div>
+          <div class="answer">
+            <strong>A:</strong> I implemented a mobile-first approach using
+            Tailwind CSS's responsive utilities. I created a custom hook
+            (useIsMobile) to detect screen sizes and conditionally render
+            components. I tested the design across multiple breakpoints: mobile
+            (320px+), tablet (768px+), and desktop (1024px+). I also used CSS
+            Grid and Flexbox for flexible layouts, and implemented
+            touch-friendly navigation for mobile users. Regular testing on
+            actual devices ensured real-world usability.
+          </div>
+        </div>
+
+        <div class="qa-section">
+          <div class="question">
+            Q: What performance optimizations did you implement?
+          </div>
+          <div class="answer">
+            <strong>A:</strong> I used Vite as the build tool for fast
+            development and optimized production builds. I implemented code
+            splitting through React Router for smaller initial bundle sizes.
+            Images are optimized and served in modern formats. I used React
+            Query for efficient data caching and background updates. The CSS is
+            purged of unused styles by Tailwind, reducing bundle size. I also
+            implemented lazy loading for non-critical components and used
+            semantic HTML for better SEO performance.
+          </div>
+        </div>
+
+        <h3 class="subsection-title">Project Ownership Questions</h3>
+
+        <div class="qa-section">
+          <div class="question">
+            Q: Walk me through your development process for this project.
+          </div>
+          <div class="answer">
+            <strong>A:</strong> I started by analyzing my requirements - I
+            needed a professional portfolio that showcases my skills
+            effectively. I researched modern design trends and decided on a
+            glassmorphism aesthetic. I set up the project with Vite and React,
+            then implemented the component architecture. I developed each
+            section iteratively: hero, about, projects, and contact. I used Git
+            for version control with meaningful commit messages. Throughout
+            development, I tested responsiveness and performance, making
+            adjustments as needed. Finally, I deployed to Vercel for easy
+            hosting and continuous deployment.
+          </div>
+        </div>
+
+        <div class="qa-section">
+          <div class="question">
+            Q: What challenges did you face and how did you overcome them?
+          </div>
+          <div class="answer">
+            <strong>A:</strong> One major challenge was ensuring consistent
+            design across all components. I solved this by implementing a design
+            system using Tailwind CSS and shadcn/ui components. Another
+            challenge was optimizing performance while maintaining rich
+            animations. I addressed this by using CSS transforms instead of
+            layout-triggering properties and implementing efficient re-rendering
+            strategies. Cross-browser compatibility was also tricky, especially
+            for the glassmorphism effects, which I solved through progressive
+            enhancement and fallback styles.
+          </div>
+        </div>
+
+        <div class="qa-section">
+          <div class="question">
+            Q: How would you scale this project for a larger team or more
+            complex requirements?
+          </div>
+          <div class="answer">
+            <strong>A:</strong> For team scaling, I would implement stricter
+            TypeScript configurations, add comprehensive testing with Jest and
+            React Testing Library, and set up CI/CD pipelines. I'd introduce
+            state management solutions like Zustand or Redux Toolkit for complex
+            state. For larger requirements, I'd implement a proper CMS for
+            content management, add internationalization support, and create a
+            component library. I'd also add monitoring tools like Sentry for
+            error tracking and analytics for user behavior insights.
+          </div>
+        </div>
+
+        <h3 class="subsection-title">Design & UX Questions</h3>
+
+        <div class="qa-section">
+          <div class="question">
+            Q: How did you approach the user experience design?
+          </div>
+          <div class="answer">
+            <strong>A:</strong> I focused on creating a clear information
+            hierarchy with the most important information (skills, projects,
+            contact) prominently displayed. I implemented smooth scrolling and
+            intuitive navigation to guide users through the content. The
+            glassmorphism design creates visual interest without overwhelming
+            the content. I ensured fast loading times and responsive design for
+            accessibility across devices. User feedback loops like hover effects
+            and smooth transitions provide immediate feedback for interactions.
+          </div>
+        </div>
+
+        <div class="qa-section">
+          <div class="question">
+            Q: Why did you choose this particular color scheme and design
+            aesthetic?
+          </div>
+          <div class="answer">
+            <strong>A:</strong> I chose a dark theme with cyan and purple
+            accents to convey a modern, tech-forward impression suitable for a
+            software developer portfolio. The glassmorphism effect adds depth
+            and sophistication while maintaining readability. The color scheme
+            provides good contrast ratios for accessibility. The animated
+            background elements create engagement without being distracting.
+            This aesthetic aligns with current design trends while remaining
+            timeless enough to not quickly become outdated.
+          </div>
+        </div>
+      </div>
+
+      <!-- 8. Possible Improvements -->
+      <div class="section page-break">
+        <h2 class="section-title">8. Possible Improvements</h2>
+
+        <h3 class="subsection-title">Feature Enhancements</h3>
+
+        <div class="improvement-item">
+          <strong>Blog Section:</strong> Add a technical blog to showcase
+          writing skills and share knowledge. Could be implemented with MDX for
+          rich content or integrated with a headless CMS like Strapi or
+          Contentful.
+        </div>
+
+        <div class="improvement-item">
+          <strong>Project Filtering:</strong> Implement filtering and search
+          functionality for projects by technology, type, or date. Could use
+          libraries like Fuse.js for fuzzy search capabilities.
+        </div>
+
+        <div class="improvement-item">
+          <strong>Interactive Resume:</strong> Create an interactive, web-based
+          resume with animations and detailed project breakdowns, complementing
+          the PDF version.
+        </div>
+
+        <div class="improvement-item">
+          <strong>Contact Form:</strong> Add a functional contact form with
+          email integration using services like EmailJS or Formspree, including
+          form validation and success/error states.
+        </div>
+
+        <div class="improvement-item">
+          <strong>Theme Switching:</strong> Implement light/dark mode toggle
+          using next-themes library, with system preference detection and smooth
+          transitions.
+        </div>
+
+        <h3 class="subsection-title">Performance Optimizations</h3>
+
+        <div class="improvement-item">
+          <strong>Image Optimization:</strong> Implement next-gen image formats
+          (WebP, AVIF) with fallbacks, lazy loading, and responsive images using
+          services like Cloudinary.
+        </div>
+
+        <div class="improvement-item">
+          <strong>Code Splitting:</strong> Implement route-based and
+          component-based code splitting to reduce initial bundle size and
+          improve loading performance.
+        </div>
+
+        <div class="improvement-item">
+          <strong>Service Worker:</strong> Add PWA capabilities with offline
+          support, caching strategies, and background sync for better user
+          experience.
+        </div>
+
+        <div class="improvement-item">
+          <strong>Performance Monitoring:</strong> Integrate tools like Web
+          Vitals, Lighthouse CI, and performance budgets to maintain optimal
+          performance.
+        </div>
+
+        <h3 class="subsection-title">Industry-Level Improvements</h3>
+
+        <div class="improvement-item">
+          <strong>AI Integration:</strong> Add an AI chatbot using OpenAI API to
+          answer questions about my experience and projects, providing 24/7
+          interaction capability.
+        </div>
+
+        <div class="improvement-item">
+          <strong>Analytics & Insights:</strong> Implement comprehensive
+          analytics using Google Analytics 4, Hotjar for user behavior analysis,
+          and custom event tracking.
+        </div>
+
+        <div class="improvement-item">
+          <strong>A/B Testing:</strong> Implement A/B testing framework to
+          optimize conversion rates for resume downloads and contact form
+          submissions.
+        </div>
+
+        <div class="improvement-item">
+          <strong>Internationalization:</strong> Add multi-language support
+          using react-i18next for global accessibility and broader reach.
+        </div>
+
+        <div class="improvement-item">
+          <strong>Microservices Architecture:</strong> Split into microservices
+          with separate APIs for blog content, project data, and analytics,
+          deployed on cloud platforms like AWS or Vercel.
+        </div>
+
+        <h3 class="subsection-title">Security & Accessibility</h3>
+
+        <div class="improvement-item">
+          <strong>Security Headers:</strong> Implement comprehensive security
+          headers (CSP, HSTS, X-Frame-Options) and regular security audits.
+        </div>
+
+        <div class="improvement-item">
+          <strong>WCAG Compliance:</strong> Achieve full WCAG 2.1 AA compliance
+          with screen reader testing, keyboard navigation, and color contrast
+          optimization.
+        </div>
+
+        <div class="improvement-item">
+          <strong>Content Security:</strong> Implement content validation,
+          sanitization, and protection against common web vulnerabilities.
+        </div>
+
+        <h3 class="subsection-title">DevOps & Monitoring</h3>
+
+        <div class="improvement-item">
+          <strong>CI/CD Pipeline:</strong> Implement comprehensive CI/CD with
+          automated testing, security scanning, performance testing, and
+          deployment strategies.
+        </div>
+
+        <div class="improvement-item">
+          <strong>Error Monitoring:</strong> Integrate Sentry or similar tools
+          for real-time error tracking, performance monitoring, and user session
+          replay.
+        </div>
+
+        <div class="improvement-item">
+          <strong>Infrastructure as Code:</strong> Use Terraform or AWS CDK to
+          manage infrastructure, ensuring reproducible deployments and disaster
+          recovery.
+        </div>
+      </div>
+
+      <!-- 8a. Implementation Guide for Improvements -->
+      <div class="section page-break">
+        <h2 class="section-title">Implementation Guide for Improvements</h2>
+        <style>
+          .difficulty-easy { border-left: 4px solid #22c55e; } /* Green */
+          .difficulty-medium { border-left: 4px solid #f59e0b; } /* Amber */
+          .difficulty-hard { border-left: 4px solid #ef4444; } /* Red */
+          .guide-item { padding: 15px; border-radius: 8px; margin-bottom: 15px; background: #f8fafc;}
+          .guide-item h4 { color: #1e40af; margin-bottom: 8px; }
+          .guide-item ul, .guide-item ol { padding-left: 20px; margin-bottom: 0; }
+        </style>
+        
+        <div class="guide-item difficulty-medium">
+          <h4>1. Adding a Blog Section</h4>
+          <p><strong>Difficulty: Medium</strong></p>
+          <p><strong>What to change:</strong></p>
+          <ul>
+            <li><strong>Routing:</strong> Update `src/App.tsx` to add new routes like `/blog` and `/blog/:slug`.</li>
+            <li><strong>New Pages:</strong> Create `BlogPage.tsx` and `BlogPostPage.tsx` in `src/pages/`.</li>
+            <li><strong>Content:</strong> Create a `/content/posts` folder for your Markdown (`.mdx`) files.</li>
+          </ul>
+          <p><strong>How to implement:</strong></p>
+          <ol>
+            <li>Install a library to parse MDX, like `mdx-bundler`.</li>
+            <li>Create the new routes. The `BlogPage` will list all posts, and `BlogPostPage` will render a single post.</li>
+            <li>Use Vite's `import.meta.glob` to discover and import all your posts for the listing page.</li>
+          </ol>
+        </div>
+
+        <div class="guide-item difficulty-medium">
+          <h4>2. Adding Project Filtering</h4>
+          <p><strong>Difficulty: Easy to Medium</strong></p>
+          <p><strong>What to change:</strong></p>
+          <ul>
+            <li><strong>State:</strong> In your portfolio page component, add a `useState` to store the active filter.</li>
+            <li><strong>UI:</strong> Add filter buttons (e.g., `ToggleGroup` from shadcn/ui) to update the filter state.</li>
+            <li><strong>Logic:</strong> Filter the projects array based on the state before rendering.</li>
+          </ul>
+          <p><strong>How to implement:</strong></p>
+          <ol>
+            <li>Create an array of filter tags (e.g., ['All', 'React', 'Vite']).</li>
+            <li>Render buttons for each tag. `onClick` should update the filter state.</li>
+            <li>Change your render logic to: `projects.filter(p => filter === 'All' || p.tags.includes(filter)).map(...)`.</li>
+          </ol>
+        </div>
+
+        <div class="guide-item difficulty-medium">
+          <h4>3. Adding a Functional Contact Form</h4>
+          <p><strong>Difficulty: Medium</strong></p>
+          <p><strong>What to change:</strong></p>
+          <ul>
+            <li><strong>Component:</strong> Create a `ContactForm.tsx` component.</li>
+            <li><strong>Libraries:</strong> Use `react-hook-form` and `zod` (already installed).</li>
+            <li><strong>Service:</strong> Sign up for a client-side email service like EmailJS or Formspree.</li>
+          </ul>
+          <p><strong>How to implement:</strong></p>
+          <ol>
+            <li>Build the form UI with `shadcn/ui` components.</li>
+            <li>Define a `zod` schema for validation.</li>
+            <li>Use the `useForm` hook with the `zodResolver`.</li>
+            <li>In the `onSubmit` function, call the email service API to send the data.</li>
+            <li>Use `sonner` (already installed) to show success/error toast notifications.</li>
+          </ol>
+        </div>
+
+        <div class="guide-item difficulty-easy">
+          <h4>4. Implementing Theme Switching</h4>
+          <p><strong>Difficulty: Easy</strong></p>
+          <p><strong>What to change:</strong></p>
+          <ul>
+            <li><strong>Provider:</strong> Ensure `ThemeProvider` from `next-themes` wraps your app.</li>
+            <li><strong>Component:</strong> Create a `ThemeToggle.tsx` button component.</li>
+          </ul>
+          <p><strong>How to implement:</strong></p>
+          <ol>
+            <li>In the toggle component, get `setTheme` and `theme` from the `useTheme` hook.</li>
+            <li>Render a button that calls `setTheme(theme === 'light' ? 'dark' : 'light')` on click.</li>
+            <li>Place the component in your site header.</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- 9. Conclusion -->
+      <div class="section">
+        <h2 class="section-title">9. Conclusion</h2>
+
+        <h3 class="subsection-title">Project Strengths</h3>
+        <ul class="features-list">
+          <li>
+            <strong>Modern Technology Stack:</strong> Uses current
+            industry-standard tools and frameworks
+          </li>
+          <li>
+            <strong>Professional Design:</strong> Clean, modern aesthetic that
+            effectively showcases skills
+          </li>
+          <li>
+            <strong>Performance Optimized:</strong> Fast loading times and
+            smooth user experience
+          </li>
+          <li>
+            <strong>Responsive Design:</strong> Works seamlessly across all
+            device types
+          </li>
+          <li>
+            <strong>Type Safety:</strong> TypeScript implementation reduces bugs
+            and improves maintainability
+          </li>
+          <li>
+            <strong>Scalable Architecture:</strong> Component-based structure
+            allows for easy expansion
+          </li>
+          <li>
+            <strong>SEO Friendly:</strong> Proper meta tags and semantic HTML
+            for search engine optimization
+          </li>
+          <li>
+            <strong>Accessibility Focused:</strong> Implements accessibility
+            best practices
+          </li>
+        </ul>
+
+        <h3 class="subsection-title">Why This Project is Impactful</h3>
+        <p>
+          This portfolio website serves as more than just a showcase of my
+          work—it demonstrates my ability to:
+        </p>
+        <ul class="features-list">
+          <li>
+            <strong>Solve Real Problems:</strong> Addresses the need for
+            professional online presence
+          </li>
+          <li>
+            <strong>Use Modern Technologies:</strong> Showcases proficiency in
+            current industry tools
+          </li>
+          <li>
+            <strong>Create User-Centered Design:</strong> Prioritizes user
+            experience and accessibility
+          </li>
+          <li>
+            <strong>Write Maintainable Code:</strong> Follows best practices for
+            long-term sustainability
+          </li>
+          <li>
+            <strong>Think Strategically:</strong> Balances technical
+            requirements with business objectives
+          </li>
+        </ul>
+
+        <h3 class="subsection-title">Personal Learning Outcomes</h3>
+        <p>Building this project enhanced my skills in several key areas:</p>
+
+        <div class="tech-stack">
+          <div class="tech-category">
+            <h4>Technical Skills</h4>
+            <ul class="features-list">
+              <li>Advanced React patterns and hooks</li>
+              <li>TypeScript for type-safe development</li>
+              <li>Modern CSS with Tailwind</li>
+              <li>Performance optimization techniques</li>
+              <li>Build tools and deployment strategies</li>
+            </ul>
+          </div>
+
+          <div class="tech-category">
+            <h4>Design Skills</h4>
+            <ul class="features-list">
+              <li>User experience design principles</li>
+              <li>Responsive design implementation</li>
+              <li>Visual hierarchy and typography</li>
+              <li>Color theory and accessibility</li>
+              <li>Animation and micro-interactions</li>
+            </ul>
+          </div>
+
+          <div class="tech-category">
+            <h4>Professional Skills</h4>
+            <ul class="features-list">
+              <li>Project planning and execution</li>
+              <li>Problem-solving and debugging</li>
+              <li>Code organization and documentation</li>
+              <li>Performance monitoring and optimization</li>
+              <li>Deployment and DevOps practices</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3 class="subsection-title">Future Vision</h3>
+        <p>
+          This portfolio represents the foundation of my professional online
+          presence. As I continue to grow as a developer, I plan to:
+        </p>
+        <ul class="features-list">
+          <li>Continuously update with new projects and skills</li>
+          <li>Implement advanced features based on user feedback</li>
+          <li>Explore emerging technologies and integrate them thoughtfully</li>
+          <li>Share knowledge through technical blog posts</li>
+          <li>Contribute to open-source projects and showcase them here</li>
+        </ul>
+      </div>
+
+      <!-- 10. Appendix -->
+      <div class="section page-break">
+        <h2 class="section-title">10. Appendix</h2>
+
+        <h3 class="subsection-title">Technical Glossary</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Term</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>SPA</strong></td>
+              <td>
+                Single Page Application - Web app that loads a single HTML page
+                and dynamically updates content
+              </td>
+            </tr>
+            <tr>
+              <td><strong>SSG</strong></td>
+              <td>
+                Static Site Generation - Pre-builds pages at build time for
+                better performance
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Glassmorphism</strong></td>
+              <td>
+                Design trend using translucent objects with blur effects to
+                create depth
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Tree Shaking</strong></td>
+              <td>
+                Elimination of unused code from the final bundle to reduce size
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Hot Module Replacement</strong></td>
+              <td>
+                Development feature that updates modules without full page
+                reload
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Code Splitting</strong></td>
+              <td>
+                Technique to split code into smaller chunks loaded on demand
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Hydration</strong></td>
+              <td>
+                Process of attaching JavaScript behavior to server-rendered HTML
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Polyfill</strong></td>
+              <td>Code that provides modern functionality on older browsers</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 class="subsection-title">Key Dependencies</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Package</th>
+              <th>Version</th>
+              <th>Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>react</td>
+              <td>18.3.1</td>
+              <td>Core React library for building user interfaces</td>
+            </tr>
+            <tr>
+              <td>typescript</td>
+              <td>5.5.3</td>
+              <td>Static type checking for JavaScript</td>
+            </tr>
+            <tr>
+              <td>vite</td>
+              <td>5.4.1</td>
+              <td>Fast build tool and development server</td>
+            </tr>
+            <tr>
+              <td>tailwindcss</td>
+              <td>3.4.11</td>
+              <td>Utility-first CSS framework</td>
+            </tr>
+            <tr>
+              <td>@tanstack/react-query</td>
+              <td>5.56.2</td>
+              <td>Data fetching and caching library</td>
+            </tr>
+            <tr>
+              <td>react-router-dom</td>
+              <td>6.26.2</td>
+              <td>Declarative routing for React applications</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 class="subsection-title">Resources & References</h3>
+        <ul class="features-list">
+          <li><strong>React Documentation:</strong> https://react.dev/</li>
+          <li>
+            <strong>TypeScript Handbook:</strong>
+            https://www.typescriptlang.org/docs/
+          </li>
+          <li>
+            <strong>Tailwind CSS Docs:</strong> https://tailwindcss.com/docs
+          </li>
+          <li><strong>Vite Guide:</strong> https://vitejs.dev/guide/</li>
+          <li><strong>shadcn/ui Components:</strong> https://ui.shadcn.com/</li>
+          <li>
+            <strong>React Query Docs:</strong> https://tanstack.com/query/latest
+          </li>
+          <li>
+            <strong>Web Accessibility Guidelines:</strong>
+            https://www.w3.org/WAI/WCAG21/quickref/
+          </li>
+          <li>
+            <strong>Performance Best Practices:</strong>
+            https://web.dev/performance/
+          </li>
+        </ul>
+
+        <h3 class="subsection-title">Contact Information</h3>
+        <div class="tech-category">
+          <h4>M S Puneeth</h4>
+          <p><strong>Email:</strong> mspuneeth73@gmail.com</p>
+          <p><strong>GitHub:</strong> https://github.com/Puneeth177</p>
+          <p>
+            <strong>LinkedIn:</strong>
+            https://linkedin.com/in/m-s-puneeth-031ba9294/
+          </p>
+          <p><strong>Portfolio:</strong> [Live URL after deployment]</p>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div
+        style="
+          text-align: center;
+          margin-top: 40px;
+          padding-top: 20px;
+          border-top: 2px solid #e2e8f0;
+          color: #64748b;
+        "
+      >
+        <p><strong>M S Puneeth - Personal Portfolio Website</strong></p>
+        <p>Technical Project Report | Generated January 2025</p>
+        <p>
+          This document serves as a comprehensive guide for technical interviews
+          and project discussions.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
